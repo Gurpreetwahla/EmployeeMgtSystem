@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="EmployeeMgtSystem.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Employee Management System</title>
+    
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="wrapper">
+           <div id="navigation">
+             <ul id="nav">
+                <li><a href="~/EmployeeMaster.aspx" runat="server">Employee</a></li>
+                
+                <li><a href="~/DepartmentMaster.aspx" runat="server">Department</a> 
+                    
+                </li> 
+                 <li><a href="~/DesignationMaster.aspx" runat="server">Designation</a> 
+                    
+                 </li> 
+                 
+            </ul>
+            
+
+        </div>
+        <div id="banner">
+
+        </div>
+        
+
+        <div id="content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+       
+        <div id="footer">
+            All Rights Reserved.
+        </div>
+    </div>
+    </form>
+</body>
+</html>
